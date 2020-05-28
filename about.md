@@ -10,7 +10,7 @@ After handing in my thesis I got some rest to think about my next step. I decide
 
 [^1]: [1] [Take a stroll down stereotype lane](https://www.youtube.com/watch?v=HaC0s-FP-r4).
 
-That is, if they end at all! Why stop what I loved doing all this time? This website is my note drawer for delightful things relating to machine learning, physics, coding, and everything related. Writing helps to organize my thoughts, sharing them keeps me sane.
+That is, if they end at all! Why stop what I loved doing all this time? This website is my note drawer for delightful things relating to machine learning, physics and coding. Writing helps to organize my thoughts, sharing them keeps me sane.
 
 Still left with questions? 📫 manucompen@pm.me. 
 
