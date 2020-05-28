@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>My notes on machine learning and physics.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 May 2020 00:23:43 +0200</pubDate>
+    <lastBuildDate>Fri, 29 May 2020 00:23:43 +0200</lastBuildDate>
+    <generator>Jekyll v4.0.1</generator>
+    
+      <item>
+        <title>First post</title>
+        <description>&lt;p&gt;This is not a post.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 May 2020 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2020/first-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/first-post/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
