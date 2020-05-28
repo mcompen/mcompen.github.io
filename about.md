@@ -12,7 +12,7 @@ After handing in my thesis I got some rest to think about my next step. I decide
 
 That is, if they end at all! Why stop what I loved doing all this time? This website is my note drawer for delightful things relating to machine learning, physics and coding. Writing helps to organize my thoughts, sharing them keeps me sane.
 
-Still left with questions? 📫 manucompen@pm.me. 
+Still left with questions? 📫 manucompen@pm.me. Or check my [git](github.com/mcompen).
 
 ---
 Footnotes:
