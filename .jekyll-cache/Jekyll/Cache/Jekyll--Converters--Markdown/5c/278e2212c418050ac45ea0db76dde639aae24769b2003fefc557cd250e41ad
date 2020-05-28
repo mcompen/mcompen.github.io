@@ -1,0 +1,19 @@
+I"(<p>In 2020 I graduated in physics at the Radboud University of beautiful Nijmegen, The Netherlands. My master thesis was on quantum machine learning, in particular the Quantum Boltzmann Machine. What’s the fuss about quantum machine learning, you ask? What a lovely question - read <a href="/assets/pdf/Thesis.pdf">my thesis</a> to get some idea.</p>
+
+<p>After handing in my thesis I got some rest to think about my next step. I decided against pursuing a career in academia. But still I felt a hole in my soul [<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>]. All those elegant mathematical and physical theories were violently ripped out of my life! How I missed playing with them, <a href="https://github.com/mcompen/NeuralQuantumState.jl">implementing them with Julia</a>, and being generally amazed by them. Violent delights have violent ends.</p>
+
+<p>That is, if they end at all! Why stop what I loved doing all this time? This website is my note drawer for delightful things relating to machine learning, physics and coding. Writing helps to organize my thoughts, sharing them keeps me sane.</p>
+
+<p>Still left with questions? 📫 manucompen@pm.me. Or check my <a href="github.com/mcompen">git</a>.</p>
+
+<hr />
+<p>Footnotes:</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>[1] <a href="https://www.youtube.com/watch?v=HaC0s-FP-r4">Take a stroll down stereotype lane</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
