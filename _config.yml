@@ -1,7 +1,7 @@
 # Site settings
 title_left    : "m"
 title_right   : "compen" # default: ""
-description   : "notes on machine learning, physics and coding."
+description   : "mcompen"
 keywords      : "Manu, Compen, Machine, Learning, Artificial, Intelligence, Physics, Coding, Deep, Programming"
 url           :  # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
