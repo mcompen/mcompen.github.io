@@ -57,9 +57,11 @@ wholes, halves = main(100, Int(1e6));
 ```
 
 Plotting these results gives the following interesting figures:
+
 | ![svg](/assets/svg/100-pills-1000000-trials-halves.svg) |
 |:--:|
 | *The average (solid red) number of halves, standard deviation (ribbon), and 10 example trajectories.* |
+
 | ![svg](/assets/svg/100-pills-1000000-trials-wholes.svg) |
 |:--:|
 | *The same figure for wholes* |
