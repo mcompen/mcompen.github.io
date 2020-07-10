@@ -10,5 +10,8 @@ keywords: "dummy content"
 
 This is not a post. Just a testing ground.
 $ E = mc^2$
-![Image of cat](/assets/images/cat.jpg)
+
+| ![Image of cat](/assets/images/cat.jpg) |
+|:--:|
+| *Image of a cat* |
 $P(x) = \exp{-\beta E(x)}$
