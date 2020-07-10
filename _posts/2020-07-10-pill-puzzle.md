@@ -13,10 +13,12 @@ This story is about a sad man. The man is ordered by his doctor to take one pill
 On day 1 he randomly grabs a whole pill from the box, he breaks it in half and consumes one half while putting the other half back in the box. On day 2 he might either grab one of the $N-1$ whole pills with probability $P(X_2=W) = \frac{N-1}{N}$, or the 1 half pill with probability $P(X_2=H) = \frac{1}{N}$. If he gets the half pill, he simply consumes it. $2\cdot N$ days pass before the bottle is empty.
 
 This story leads to a set of interesting statistical questions:
+
 1. If this experiment is done by all sad men in the entire world, what is the average number of days that will pass before only halves remain inside the bottle?
 2. The first day the pill will be whole. The last day the pill will be half. But how does the probability $P(X_k=H)$ behave between day $1$ and day $2\cdot N$?
 
-Before we analyze this problem mathematically, it is too tempting to write some quick and dirty code and make some figures.
+## Quick insights through code
+Before we analyze this problem mathematically, it is way too tempting to write some code and make some figures.
 
 ```julia
 function experiment(w_arr::Array{Int, 2}, h_arr::Array{Int, 2}, day::Int, man::Int)
@@ -27,7 +29,6 @@ function experiment(w_arr::Array{Int, 2}, h_arr::Array{Int, 2}, day::Int, man::I
     else  # Taken a half: consume it
         w_arr[day + 1, man] = w_arr[day, man]
         h_arr[day + 1, man] = h_arr[day, man] - 1
-
     end
 end
 ```
