@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dummy post"
-description: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+description: "Testing testing 123"
 comments: false
 mathjax: true
 keywords: "dummy content"
