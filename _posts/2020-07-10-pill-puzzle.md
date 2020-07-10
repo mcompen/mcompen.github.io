@@ -10,12 +10,12 @@ keywords: "pill box puzzle half whole statistics probability"
 
 This story is about a sad man. The man is ordered by his doctor to take one pill each day in order to stay happy. The doctor gives him a pill box with $N$ pills. The sad man decides in his sadness that he wants only to be slightly happy. Therefore, he takes only half the dosage each day.
 
-On day 1 he randomly grabs a whole pill from the box, he breaks it in half and consumes one half while putting the other half back in the box. On day 2 he might either grab one of the $N-1$ whole pills with probability $P(X_2=W) = \frac{N-1}{N}$, or the 1 half pill with probability $P(X_2=H) = \frac{1}{N}$. If he gets the half pill, he simply consumes it. $2\cdot N$ days pass before the bottle is empty.
+On day 1 he randomly grabs a whole pill from the box, he breaks it in half and consumes one half while putting the other half back in the box. On day 2 he might either grab one of the $N-1$ whole pills with probability $P(X_2=W) = \frac{N-1}{N}$, or the 1 half pill with probability $P(X_2=H) = \frac{1}{N}$. If he gets the half pill, he simply consumes it. Before the bottle is empty, $2\cdot N$ days will have passed.
 
-This story leads to a set of interesting statistical questions:
+This story sets the stage of some interesting, and not super-trivial statistical questions:
 
-1. If this experiment is done by all sad men in the entire world, what is the average number of days that will pass before only halves remain inside the bottle?
-2. The first day the pill will be whole. The last day the pill will be half. But how does the probability $P(X_k=H)$ behave between day $1$ and day $2\cdot N$?
+1.  If a lot of sad men around the world do this, what is the average number of days that will pass before only halves remain inside the bottle?
+2.  The first day the pill will be a whole one. The last day the pill will be half. But how does the probability $P(X_t=H)$ behave for $1<t\leq 2N$?
 
 ## Quick insights through code
 Before we analyze this problem mathematically, it is way too tempting to write some code and make some figures.
