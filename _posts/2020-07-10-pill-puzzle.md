@@ -12,12 +12,11 @@ This story is about a sad man. The man is ordered by his doctor to take one pill
 
 On day 1 he randomly grabs a whole pill from the box, he breaks it in half and consumes one half while putting the other half back in the box. On day 2 he might either grab one of the $N-1$ whole pills with probability $P(X_2=W) = \frac{N-1}{N}$, or the 1 half pill with probability $P(X_2=H) = \frac{1}{N}$. If he gets the half pill, he simply consumes it. Before the bottle is empty, $2\cdot N$ days will have passed.
 
-This story sets the stage of some interesting, and not super-trivial statistical questions:
-
+The sad man is mathematically inclined and starts to wonder about how the contents of his pill box change over time. He wonders:
 1.  If a lot of sad men around the world do this, what is the average number of days that will pass before only halves remain inside the bottle?
 2.  The first day the pill will be a whole one. The last day the pill will be half. But how does the probability $P(X_t=H)$ behave for $1<t\leq 2N$?
 
-## Quick insights through code
+## Quick visualization through code
 Before we analyze this problem mathematically, it is way too tempting to write some code and make some figures.
 
 ```julia
