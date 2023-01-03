@@ -29,6 +29,8 @@ I identify the UUID with `ls -l /dev/disk/by-uuid/`, make a directory with `mkdi
 |:--:|
 |`UUID=XXX /mnt/usb1 ext4 defaults,auto,users,rw,nofail,noatime 0 0`|
 
+It is important that the owner of the directory is the same as the Docker user, or the containers will not have the correct permissions to read/write files after mounting this USB device. I use `chown -R pi:pi /mnt/usb1` and use the GUID/PUID corresponding to this user (use `id` to see this) as environment variables in the docker-compose templates later on. See also the linux server [docs](https://docs.linuxserver.io/general/understanding-puid-and-pgid).
+
 # Setting up networking
 To make my life easy, I set up static DHCP for the Pi Mac.
 I also added a DNS entry so that I can access the Pi using `raspberry.lan` while on the home network.
@@ -150,20 +152,22 @@ When trying to cast, there will be a redirect to `app.plex.tv`. For direct playb
 
 # Using Plex from outside the network
 Using Plex from outside the network can be enabled in various ways. Plex has a built-in solution, but with the NordVPN
-tunnel I can be sure I am the only one that has access to the LAN of my home address. By using `nordvpn mesh peer list`,
+tunnel I can be sure I am the only one that has access to the LAN of my home address without usage of port forwarding. By using `nordvpn mesh peer list`,
 the hostname of the Pi is described at the top, accompanied by the IP of the `.nord` address.
 This `.nord` address should also be visible from any other NordVPN application.
-From any other application, this hostname can be used to route traffic over using the Meshnet functionality.
-Moreover, accessing the Plex library can be done while traffic is routed by adding a manual connection in Plex.
+From any client device logged in with the same NordVPN account, this hostname can be used to route traffic over using the Meshnet functionality. With LAN discovery disabled in the client device, the Plex server should become visible when traffic is routed via the mesh over the Pi.
+Accessing the Plex library with LAN discovery enabled can also be done adding a manual connection in Plex.
 In the Android app this can be set under `Settings > Advanced > Manual connections`. The IP here is the mesh IP of the Pi, the port is `32400`.
 Additionally, in `Settings > Advanced > Allow insecure connections`, set to `On same network`.
 
 # Notes
+- The vuetorrent webUI leaves out some settings. To access these settings via the UI, temporarily disable the alternative webUI. 
+- The NordVPN client for Linux is quite buggy. For additional safety, it is wise to use a proxy directly in qBittorrent. See [here](https://support.nordvpn.com/Connectivity/Proxy/1087802472/Proxy-setup-on-qBittorrent.htm) for a how-to on the setup.
 - Make sure the AV format (container/codec) is supported by the device that plays it. Otherwise, Plex will start transcoding
 which will make the little Pi sweat (and playback will probably stutter). Plex offers the option to 'optimize' files asynchronously 
-so that de/encoding is not done on the fly.
+so that de/encoding is not done on the fly, but this is very slow. Generally, use a device that is able to play HVEC content natively and has audio codec support as well. Even audio transcoding will make playback suffer. I use a Chromecast for Google TV 4k which works until I connect my wireless earbuds to the Chromecast, since my earbuds only support a limited amount of codecs.
 - Routing traffic via the Pi could introduce a bottleneck to any traffic going to/from the device that is used.
-After consuming content from Plex remotely, it is best to reset the VPN to use a 'normal' server.
+After consuming content from Plex remotely, it is best to connect to a 'normal' server again on the client.
 
 | ![Image of plex](/assets/images/12angrymen_plex.jpg) |
 |:--:|
